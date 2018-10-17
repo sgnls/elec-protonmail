@@ -1,1 +1,1 @@
-# elec-protonmail
+# Electron : ProtonMail

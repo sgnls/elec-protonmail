@@ -1,0 +1,52 @@
+{
+  "name": "elec-protonmail",
+  "version": "0.0.1",
+  "description": "Electron : ProtonMail",
+  "homepage": "https://github.com/sgnls/elec-protonmail",
+  "keywords": [
+    "Twitter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sgnls/elec-protonmail.git"
+  },
+  "author": "Matt Hill <desk@sgnls.net>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "scripts": {
+    "start": "electron ./app",
+    "start-debug": "WEB_DEBUG=1 electron --disable-http-cache ./app",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "devDependencies": {
+    "electron": "^1.4.15",
+    "electron-builder": "^13.11.1"
+  },
+  "build": {
+    "appId": "elec-protonmail",
+    "asar": false,
+    "linux": {
+      "category": "Network;Chat;Social",
+      "packageCategory": "net",
+      "executableName": "protonmail",
+      "synopsis": "ProtonMail (Electron)",
+      "description": "ProtonMail for Linux via Electron.",
+      "desktop": {
+        "Name": "ProtonMail",
+        "Comment": "ProtonMail for Linux via Electron.",
+        "StartupWMClass": "protonmail"
+      },
+      "target": [
+        "tar.gz",
+        "deb",
+        "rpm",
+        "pacman"
+      ]
+    }
+  },
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/sgnls/elec-protonmail/issues"
+  },
+  "main": "index.js"
+}
