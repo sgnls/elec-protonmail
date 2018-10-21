@@ -7,6 +7,7 @@
   const nativeNotifications = require('./native-notifications');
 
   const iconPath = path.join(__dirname, '../assets/icons/icon-96x96.png');
+	require('./zoom')();
 
   trayNotifications({
     ipc: ipcRenderer,
